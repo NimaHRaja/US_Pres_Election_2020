@@ -42,7 +42,8 @@ biden_pres_flor_penn_odds <-
 biden_pres_flor_penn_odds <- 
     biden_pres_flor_penn_odds %>% 
     mutate(prob = 0.5/back + 0.5/lay)
-png("US_pres_elec_2020_betfair_Biden_pres_florida_compare-1.png", width = 800, height = 600)
+
+# png("US_pres_elec_2020_betfair_Biden_pres_florida_compare-1.png", width = 1000, height = 600)
 biden_pres_flor_penn_odds %>% 
     filter(Date > as.POSIXct('2020/11/02')) %>% 
     ggplot(aes(x = Date, y = prob, colour = Market)) + 
@@ -51,4 +52,4 @@ biden_pres_flor_penn_odds %>%
     ylab("Probability") +
     xlab("time (GMT)") +
     ggtitle("Comparing probabilities of Joe Biden's winning the election and winnig Pennsylvania (Betfair)")
-dev.off()
+# dev.off()
