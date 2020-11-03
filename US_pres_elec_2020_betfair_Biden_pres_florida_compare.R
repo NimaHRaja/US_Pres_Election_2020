@@ -43,7 +43,7 @@ biden_pres_flor_penn_odds <-
     biden_pres_flor_penn_odds %>% 
     mutate(prob = 0.5/back + 0.5/lay)
 
-# png("US_pres_elec_2020_betfair_Biden_pres_florida_compare-1.png", width = 1000, height = 600)
+# png("US_pres_elec_2020_betfair_Biden_pres_pennsylvania_compare-1.png", width = 1000, height = 600)
 biden_pres_flor_penn_odds %>% 
     filter(Date > as.POSIXct('2020/11/02')) %>% 
     ggplot(aes(x = Date, y = prob, colour = Market)) + 
