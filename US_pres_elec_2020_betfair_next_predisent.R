@@ -53,7 +53,7 @@ next_pres_odds <-
 next_pres_odds$runner <- factor(next_pres_odds$runner, levels = c("Trump", "Biden"))
 
 
-# png("US_pres_elec_2020_betfair_next_predisent-2.png", width = 1000, height = 600)
+# png("US_pres_elec_2020_betfair_next_predisent-3.png", width = 1000, height = 600)
 next_pres_odds %>% 
     filter(Date > as.POSIXct('2020/11/04')) %>%
     ggplot(aes(x = Date, y = prob, colour = runner)) + 
