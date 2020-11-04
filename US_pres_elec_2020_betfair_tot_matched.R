@@ -40,7 +40,7 @@ next_pres_odds %>%
 # dev.off()
 
 
-# png("US_pres_elec_2020_betfair_tot_matched-2.png", width = 800, height = 600)
+# png("US_pres_elec_2020_betfair_tot_matched-3.png", width = 800, height = 600)
 next_pres_odds %>% 
     filter(Date > as.POSIXct('2020/11/02')) %>%
     ggplot(aes(x = Date, y = totalMatched)) + 
